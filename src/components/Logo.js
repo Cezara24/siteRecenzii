@@ -5,22 +5,22 @@ export default function Logo() {
     <div className={styles.Logo}>
       <div className={styles.iconsContainer}>
         <span
-          class={`${styles.icon} ${styles.icon__stars} ${styles.icon__star1} material-icons-round`}
+          className={`${styles.icon} ${styles.icon__stars} ${styles.icon__star1} material-icons-round`}
         >
           star
         </span>
         <span
-          class={`${styles.icon} ${styles.icon__stars} ${styles.icon__star2} material-icons-round`}
+          className={`${styles.icon} ${styles.icon__stars} ${styles.icon__star2} material-icons-round`}
         >
           star
         </span>
         <span
-          class={`${styles.icon} ${styles.icon__stars} ${styles.icon__star3} material-icons-round`}
+          className={`${styles.icon} ${styles.icon__stars} ${styles.icon__star3} material-icons-round`}
         >
           star
         </span>
         <span
-          class={`${styles.icon} ${styles.icon__camera} material-icons-round`}
+          className={`${styles.icon} ${styles.icon__camera} material-icons-round`}
         >
           movie_filter
         </span>

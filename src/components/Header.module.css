@@ -13,7 +13,7 @@
 }
 
 .navbar {
-  width: 80vh;
+  width: 80vw;
   min-width: fit-content;
   display: flex;
   justify-content: space-between;

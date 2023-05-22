@@ -41,6 +41,13 @@ function App() {
                 <ReviewPage name="The Shawshank Redemption"/>
               }
             />
+            <Route
+              path="/moana"
+              element={
+                <ReviewPage name="Moana"/>
+              }
+            />
+            
            
             <Route path="*" element={<NotFound />} />
           </Routes>

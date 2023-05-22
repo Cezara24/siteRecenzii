@@ -4,6 +4,9 @@
     border-radius: 5px;
     font-size: 1.7rem;
     padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .title {
@@ -16,7 +19,7 @@
 .details {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 

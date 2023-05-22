@@ -1,5 +1,6 @@
 import styles from "./ReviewPage.module.css";
 import Header from "./Header";
+import Stars from "./Stars";
 import { Data } from "../data";
 import { Fragment } from "react";
 
@@ -9,6 +10,7 @@ export default function ReviewPage(props) {
   const movieData = data[name];
   const title = movieData.title;
   const review = movieData.review;
+  const rating = movieData.rating;
 
   return (
     <Fragment>
@@ -16,6 +18,7 @@ export default function ReviewPage(props) {
       <section className={styles.ReviewPage}>
         <div className={styles.title}>{title}</div>
         <div className={styles.review}>{review}</div>
+        <div>Rating: {rating} <Stars stars={rating} /> </div>
       </section>
     </Fragment>
   );

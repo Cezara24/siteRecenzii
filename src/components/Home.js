@@ -2,18 +2,26 @@ import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
 import Header from "./Header";
+import Stars from "./Stars";
 import Review from "./Review";
 import TheShawshankRedemption from "../images/The Shawshank Redemption 1994.jpg";
+import { Data } from "../data";
 
 export default function Home() {
-  const title = "The Shawshank Redemption";
-  const year = "1994";
-  const rating = "9.3";
-  const genre = "drama";
-  const director = "Frank Darabont";
-  const writers = ["Stephen King", "Frank Darabont"];
-  const cast =
-    "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler, Clancy Brown";
+  const topMovieName = "The Shawshank Redemption"
+
+  const data = Data();
+
+  const topMovieData = data[topMovieName];
+  const title = topMovieData.title;
+
+
+  const year = topMovieData.year;
+  const rating = topMovieData.rating;
+  const genre = topMovieData.genre;
+  const director = topMovieData.director;
+  const writers = topMovieData.writers;
+  const cast = topMovieData.cast;
   return (
     <Fragment>
       <Header />
@@ -39,7 +47,7 @@ export default function Home() {
               <div className={styles.movieTitle}>{title}</div>
               <div className={styles.details}>
                 <div>Year: {year}</div>
-                <div>Rating: {rating} ⭐</div>
+                <div>Rating: {rating} <Stars stars={rating} /></div>
                 <div>Genre: {genre}</div>
                 <div>Director: {director}</div>
                 <div>Writers: {writers}</div>
@@ -56,59 +64,21 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Review
-            title={title}
-            year={year}
-            rating={rating}
-            genre={genre}
-            director={director}
-            writers={writers}
-            cast={cast}
+            name="The Shawshank Redemption" link="/the-shawshank-redemption"
           />
           <Review
-            title={title}
-            year={year}
-            rating={rating}
-            genre={genre}
-            director={director}
-            writers={writers}
-            cast={cast}
+            name="Moana" link="moana"
           />
           <Review
-            title={title}
-            year={year}
-            rating={rating}
-            genre={genre}
-            director={director}
-            writers={writers}
-            cast={cast}
+            name="The Shawshank Redemption"  link="/the-shawshank-redemption"
           />
           <Review
-            title={title}
-            year={year}
-            rating={rating}
-            genre={genre}
-            director={director}
-            writers={writers}
-            cast={cast}
+            name="The Shawshank Redemption"  link="/the-shawshank-redemption"
           />
           <Review
-            title={title}
-            year={year}
-            rating={rating}
-            genre={genre}
-            director={director}
-            writers={writers}
-            cast={cast}
+            name="The Shawshank Redemption"  link="/the-shawshank-redemption"
           />
-          <Review
-            title={title}
-            year={year}
-            rating={rating}
-            genre={genre}
-            director={director}
-            writers={writers}
-            cast={cast}
-          />
+          
         </div>
       </section>
     </Fragment>

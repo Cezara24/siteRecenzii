@@ -1,53 +1,67 @@
-.logoWithText {
-    display: flex;
-    align-items: center;
-    width: 20rem;
+.Logo {
+  box-sizing: border-box;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-    height: 4rem;
-    margin-right: 1rem;
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
 }
 
-.logoName{
-    display:flex;
-    gap: 0.7rem;
-    justify-content: center;
-    color: aliceblue;
-    font-size: 2rem;
+.icon {
 }
 
-.logoName p {
-    margin: 0;
+.icon__camera {
+  color: #0b2447;
+  position: absolute;
+  font-size: 3rem;
+  top: -0.5rem;
+  left: 1.5rem;
+  transform: rotate(-10deg);
 }
 
-@media (max-width: 550px) {
-    .logoWithText {
-        width: fit-content;
-    }
-
-    .logo {
-        height: 2.5rem;
-    }
-
-    .logoName {
-        font-size: 1.5rem;
-    }
+.icon__stars {
+  color: #ffe194;
+  z-index: 6;
+  position: absolute;
 }
 
-@media (max-width: 300px) {
-    .logo {
-        height: 2rem;
-    }
-
-    .logoName {
-        font-size: 1rem;
-    }
+.logoText {
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  margin-top: 2.5rem;
+  color: #0b2447;
+  border: solid;
+  border-width: 3px;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-top-color: #0b2447;
+  font-weight: 600;
 }
 
+.icon__star1 {
+  font-size: 2rem;
+  top: 0.4rem;
+  right: 0;
+  transform: rotate(-30deg);
+}
 
-@media (max-width: 220px) {
-    /* .logoName {
-        display: none;
-    } */
+.icon__star2 {
+  font-size: 1.6rem;
+  top: -0.2rem;
+  right: 1.5rem;
+  transform: rotate(-40deg);
+}
+
+.icon__star3 {
+  font-size: 1.2rem;
+  top: -0.2rem;
+  right: 3rem;
+  transform: rotate(-50deg);
 }

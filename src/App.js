@@ -1,108 +1,42 @@
-import React, { Fragment, useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { BrowserView, MobileView } from "react-device-detect";
+import React, { Fragment } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 // ROUTES
-import Home from "./components/routes/home/Home";
-import NotFound from "./components/routes/notFound/NotFound";
-import LanguageCustomCourses from "./components/routes/languageCourses/LanguageCustomCourses";
+import Home from "./components/Home";
+import Browse from "./components/Browse";
+import WriteReviewSection from "./components/WriteReviewSection";
+import NotFound from "./components/NotFound";
 
-// mobile (temporary)
-import Mobile from "./components/mobile/Mobile";
 
 function App() {
   return (
     <Fragment>
-      {/* <BrowserView> */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-
-            {/* ------------------------------- EN ------------------------------- */}
             <Route
-              path="/en-individual-custom-japanese"
+              path="/browse"
               element={
-                <LanguageCustomCourses module="individualCustomJapanese__en" />
+                <Browse/>
               }
             />
             <Route
-              path="/en-group-custom-japanese"
+              path="/browse"
               element={
-                <LanguageCustomCourses module="groupCustomJapanese__en" />
+                <Browse/>
               }
             />
             <Route
-              path="/en-individual-custom-japanese-intensive"
+              path="//write-a-review"
               element={
-                <LanguageCustomCourses module="individualCustomJapaneseIntensive__en" />
+                <WriteReviewSection/>
               }
             />
-            <Route
-              path="/en-group-custom-japanese-intensive"
-              element={
-                <LanguageCustomCourses module="groupCustomJapaneseIntensive__en" />
-              }
-            />
-
-            {/* ------------------------------- JP ------------------------------- */}
-            <Route
-              path="/jp-individual-custom-english"
-              element={
-                <LanguageCustomCourses module="individualCustomEnglish__jp" />
-              }
-            />
-            <Route
-              path="/jp-group-custom-english"
-              element={
-                <LanguageCustomCourses module="groupCustomEnglish__jp" />
-              }
-            />
-            <Route
-              path="/jp-individual-custom-english-intensive"
-              element={
-                <LanguageCustomCourses module="individualCustomEnglishIntensive__jp" />
-              }
-            />
-            <Route
-              path="/jp-group-custom-english-intensive"
-              element={
-                <LanguageCustomCourses module="groupCustomEnglishIntensive__jp" />
-              }
-            />
-
-            {/* ------------------------------- RO ------------------------------- */}
-            <Route
-              path="/ro-individual-custom-japanese"
-              element={
-                <LanguageCustomCourses module="individualCustomJapanese__ro" />
-              }
-            />
-            <Route
-              path="/ro-group-custom-japanese"
-              element={
-                <LanguageCustomCourses module="groupCustomJapanese__ro" />
-              }
-            />
-            <Route
-              path="/ro-individual-custom-japanese-intensive"
-              element={
-                <LanguageCustomCourses module="individualCustomJapaneseIntensive__ro" />
-              }
-            />
-            <Route
-              path="/ro-group-custom-japanese-intensive"
-              element={
-                <LanguageCustomCourses module="groupCustomJapaneseIntensive__ro" />
-              }
-            />
+           
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-      {/* </BrowserView> */}
-      {/* <MobileView>
-        <Mobile />
-      </MobileView> */}
     </Fragment>
   );
 }

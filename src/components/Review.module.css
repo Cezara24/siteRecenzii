@@ -1,0 +1,11 @@
+.Review {
+    height: 20rem;
+    width: 25rem;
+    background-color: #576cbc;
+    color: #0b2447;
+    border-radius: 5px;
+}
+
+.title {
+    color: #0b2447;
+}

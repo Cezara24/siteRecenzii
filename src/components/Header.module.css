@@ -1,185 +1,32 @@
-@import url("../helpers/colors.css");
-
 .Header {
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-  height: min-content;
   width: 100%;
-  z-index: 3;
+  height: fit-content;
   position: fixed;
-  padding: 0.5rem;
-}
+  z-index: 5;
+  box-sizing: border-box;
+  background-color: #576cbc;
+  padding: 0.5rem 4rem;
 
-.Logo {
-  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar {
+  width: 80vh;
+  min-width: fit-content;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 70vw;
+  justify-content: space-between;
 }
 
-/* DROPDOWN */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
+.button {
+  font-size: 1.5rem;
+  padding: 0.2rem 0.5rem;
   background-color: transparent;
-  z-index: 4;
+  color: #0b2447;
+  border: none;
 }
 
-.dropdownContent Button {
-  margin-top: 10px;
-  text-align: start;
+.button:hover, .button:active {
+    color: #A5D7E8;
 }
-
-.dropdownContent Button:hover {
-  color: var(--blueTint10);
-}
-
-.dropdown:hover .dropdownContent {
-  display: block;
-}
-
-/* Mobile Header */
-
-
-.menu {
-  display: none;
-  color: var(--textLight);
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-.menu:hover, .menu:active {
-  cursor: pointer;
-}
-
-.logo__phone {
-  display: none;
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-@media (max-width: 1655px) {
-  .Header {
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .logoContainer {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu {
-    display: block;
-    align-self: flex-start;
-    position: absolute;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: auto;
-    align-items: center;
-    width: fit-content;
-    height: 100%;
-    padding: 1rem;
-  }
-
-  .navbar__close {
-    display: none;
-  }
-
-  .dropdown:hover .dropdownContent {
-    display: none;
-  }
-
-  .Header__close {
-    height: fit-content;
-  }
-}
-
-@media (max-width: 550px) {
-  .menu {
-    font-size: 1.5rem;
-    padding: 1rem 0.5rem;
-  }
-
-  .Logo {
-    padding: 0.5rem 1rem 0rem 1rem;
-  }
-
-  .navbar {
-    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
-  }
-}
-
-@media (max-width: 300px) {
-  .menu {
-    font-size: 1rem;
-  }
-
-  .navbar {
-    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
-  }
-}
-
-@media (max-width: 220px) {
-  .Header {
-    padding: 0;
-  }
-  .header__phone{
-    display: flex;
-  }
-  .Logo__phone {
-    padding-top: 0.5rem;
-    display: block;
-  }
-
-  .Logo {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .menu__phone {
-    color: var(--textLight);
-    font-size: 1rem;
-    padding: 1rem 0.5rem;
-    align-self: flex-start;
-    /* position: absolute; */
-  }
-
-  .menu__phone:hover, .menu__phone:active {
-    cursor: pointer;
-  }
-}
-
-@media (min-width: 220px) {
-  .header__phone, .Logo__phone, .menu__phone {
-    display: none;
-  }
-}
-
-

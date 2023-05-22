@@ -24,6 +24,21 @@ export function Data() {
       \n\n
       It's not as amazing as Zootopia, but Moana is still a genuinely good Disney movie. It has a superb single, a nice accompanying soundtrack, great characters, sublime animation with crystal- clear attention to detail, and wonderful themes and messages. I admit, I was expecting too much from Moana after seeing Zootopia, which is probably why I give Moana a 9. Zootopia hits the 10. If you haven't seen either one, I recommend seeing Moana first.`,
     },
+
+    "Tom Jones": {
+      title: "Tom Jones",
+      year: "2023",
+      rating: "5.2",
+      genre: "Comedy, Romance",
+      director: "Georgia Parris",
+      writers: "Henry Fielding, Gwyneth Hughes, Gwyneth Hughes",
+      cast: "Sophie Wilde, Solly McLeod, Shirley Henderson, 	Pearl Mackie, Alun Armstrong",
+      review: `The 1963 Tom Jones was a deserved classic, perfectly cast and well nigh perfectly adapted. But most of all it was fantastically high spirited, with wit and energy from the first frame. It caused me to read Fielding's novel, one of the great comic romps in English literature.
+      \n\n
+      The inevitable concessions to the spirit of these times don't bother me in this version. But the utter lifelessness, the joylessness, the absence of humor and wit - that does. And making Sophie the narrator and center of wisdom is just absurd. Fielding's Sophie, wonderfully portrayed by Susannah York on the movie, is a smart, but youthful ingenue, beginning her own life's journey (to be sure, with many fewer options than a young man of that v era). Giving her preternatural insight doesn't work.
+      \n\n
+      In short, another BBC disaster. You'd think one of these days the writers and directors who do these things will figure out that you can't slip a little sermon into these classics and have them survive. Not yet, evidently.`,
+    },
   };
   return data;
 }

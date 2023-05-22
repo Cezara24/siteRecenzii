@@ -70,7 +70,7 @@ export default function Home() {
             name="Moana" link="moana"
           />
           <Review
-            name="The Shawshank Redemption"  link="/the-shawshank-redemption"
+            name="Tom Jones"  link="/tom-jones"
           />
           <Review
             name="The Shawshank Redemption"  link="/the-shawshank-redemption"

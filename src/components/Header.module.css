@@ -4,7 +4,7 @@
   position: fixed;
   z-index: 5;
   box-sizing: border-box;
-  background-color: #576cbc;
+  background-color: #4e61a9;
   padding: 0.5rem 4rem;
 
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .navbar {
-  width: 80vw;
+  width: 50vw;
   min-width: fit-content;
   display: flex;
   justify-content: space-between;

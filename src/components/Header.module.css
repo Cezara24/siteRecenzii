@@ -29,4 +29,5 @@
 
 .button:hover, .button:active {
     color: #A5D7E8;
+    cursor: pointer;
 }

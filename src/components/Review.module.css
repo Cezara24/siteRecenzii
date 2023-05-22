@@ -1,11 +1,42 @@
 .Review {
-    height: 20rem;
-    width: 25rem;
     background-color: #576cbc;
     color: #0b2447;
     border-radius: 5px;
+    font-size: 1.7rem;
+    padding: 2rem 3rem;
 }
 
 .title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: transparent;
+    border: solid;
+    border-radius: 10px;
+    border-color: #A5D7E8;
+    color: #A5D7E8;
+    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+}
+
+.button:hover, .button:active {
+    cursor: pointer;
+    background-color: #A5D7E8;
     color: #0b2447;
 }

@@ -11,12 +11,17 @@ export default function Review(props) {
   return (
     <section className={styles.Review}>
       <div className={styles.title}>{title}</div>
-      <div className={styles.year}>{year}</div>
-      <div className={styles.rating}>{rating}</div>
-      <div className={styles.genre}>{genre}</div>
-      <div className={styles.director}>{director}</div>
-      <div className={styles.writers}>{writers}</div>
-      <div className={styles.cast}>{cast}</div>
+      <div className={styles.details}>
+        <div className={styles.year}>Year: {year}</div>
+        <div className={styles.rating}>Rating: {rating} ⭐</div>
+        <div className={styles.genre}>Genre: {genre}</div>
+        <div className={styles.director}>Director:{director}</div>
+        <div className={styles.writers}>Writers:{writers}</div>
+        <div className={styles.cast}>Cast: {cast}</div>
+      </div>
+      <div className={styles.buttonContainer}>
+        <button className={styles.button}>Read the review</button>
+      </div>
     </section>
   );
 }

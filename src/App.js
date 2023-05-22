@@ -6,6 +6,8 @@ import "./App.css";
 import Home from "./components/Home";
 import Browse from "./components/Browse";
 import WriteReviewSection from "./components/WriteReviewSection";
+import ReviewPage from "./components/ReviewPage";
+
 import NotFound from "./components/NotFound";
 
 
@@ -28,9 +30,15 @@ function App() {
               }
             />
             <Route
-              path="//write-a-review"
+              path="/write-a-review"
               element={
                 <WriteReviewSection/>
+              }
+            />
+            <Route
+              path="/the-shawshank-redemption"
+              element={
+                <ReviewPage name="The Shawshank Redemption"/>
               }
             />
            
